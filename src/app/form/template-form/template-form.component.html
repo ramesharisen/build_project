@@ -1,0 +1,36 @@
+<!-- <hr><h3>Template Form </h3>
+<hr>
+
+<div [hidden]="submitted">
+    
+
+<form #tempform=" "  (ngSubmit)="onSubmit()">
+
+    <label for="">Name</label> <br>
+    <input type="text" id="Name" name="Name" required minlength="3" maxlength="35" [(ngModel)]="tempform.Name"><br>
+
+    <label for="">Mobile No :</label> <br>
+    <input type="text" id="Mobile" name="Mobile" required [(ngModel)]="tempform.Mobile"><br>
+
+    <label for="">Email id :</label> <br>
+    <input type="text" id="Email" name="Email" required [(ngModel)]="tempform.Email"><br>
+    <BR>
+    <button type="submit" [disabled]="!tempform.form.valid">Submit</button>
+
+</form></div>
+
+
+
+<div [hidden]="!submitted">
+<p>
+<strong> Name</strong> {{tempform.Name}}
+</p>
+<p>
+<strong> Mobile No</strong> {{tempform.Mobile}}
+</p>
+<p>
+<strong> Email id</strong> {{tempform.Email}}
+</p>
+
+
+</div> -->

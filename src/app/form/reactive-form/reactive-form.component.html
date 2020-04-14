@@ -1,0 +1,42 @@
+<hr>
+<h3>Reactive Form </h3>
+<hr>
+
+<!-- <label for="Name">Name</label><br>
+<input type="text" [formControl]="name">
+{{name.value}} -->
+
+<form [formGroup]="empForm" (ngSubmit)="onSubmit()">
+<label for="">First Name : </label><br>
+<input type="text" formControlName="FirstName"> 
+
+<br>
+
+<label for="">Last Name : </label> <br>
+<input type="text" formControlName="LastName"><br>
+
+
+    <label for=""> Street: </label> <br>
+    <input type="text" formControlName="Street"><br>
+
+<label for="">City : </label> <br>
+<input type="text" formControlName="City"><br>
+
+<label for="">Zipcode: </label> <br>
+<input type="text" formControlName="Zipcode"><br>
+
+<label for="">State: </label> <br>
+<input type="text" formControlName="State"><br>
+
+
+   
+
+<br>
+
+<button type="submit" [disabled]="!empForm.valid"> Submit</button>
+
+</form>
+<hr>
+<!-- {{empForm.value |json}} -->
+<br>
+

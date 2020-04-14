@@ -1,0 +1,21 @@
+input{
+    width: 60%;
+
+}
+
+button{
+    background-color: rgb(224, 22, 22);
+    width: 24%;
+    height: 35px;
+    color:white;
+    border: none;
+}
+
+.ng-valid[required],.ng-valid.required{
+    border:2px solid green;
+}
+
+.ng-invalid:not(form){
+    border: 2px solid red;
+}
+

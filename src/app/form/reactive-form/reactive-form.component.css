@@ -1,0 +1,20 @@
+form{
+    margin-left: 50px;
+}
+
+label{
+    display: inline;
+}
+input{
+    width: 70%;
+    height: 50px;
+}
+
+button{
+    background-color: rgb(55, 187, 15);
+    border: none;
+    width: 30%;
+    height: 40px;
+    color:white;
+    
+}
